@@ -28,7 +28,7 @@ class BookHandler(BaseHTTPRequestHandler):
                 self.wfile.write(json.dumps({ "error": "Invalid ID" }).encode())
         else:
             self._set_headers(404)
-            self.wfile.write(json.dumps({ "error": "ERRO" }).encode())
+            self.wfile.write(json.dumps({ "error": "ERO" }).encode())
 
     def do_POST(self):
         if self.path == "/books":
